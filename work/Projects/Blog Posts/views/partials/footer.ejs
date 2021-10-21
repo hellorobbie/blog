@@ -1,0 +1,72 @@
+<div class="footer">
+
+  <div class="container footer-tier">
+  <div class="col-sm-4 col-xs-12 logofooter">
+  	<img src="../images/logo_Footer.jpg" class="logo logofooter" alt="logo">
+  	<b class="footerHeading">Robbie Nguyen</b>
+  </div>
+  <div class="col-sm-3 col-sm-offset-1 col-xs-12 col-xs-offset-0"><p>
+  <b>Ottawa Ontario</b> <br>
+  K1N 8K8 <br>
+  Canada</p>
+  <p>
+  	<br>
+  <b>Toronto Ontario</b> <br>
+  M5J 2T6 <br>
+  Canada</p>
+  <!-- <br><a href="../cookies/" class="flink"> Cookie Policy</a> <a href="sitemap.html" class="flink"> Sitemap</a> -->
+
+</div>
+  <div class="col-sm-4 col-xs-12"><a href="mailto:hello@robbienguyen.ca" class="footerEmail"><b>hello@robbienguyen.ca</b></a><div class="span12">
+  <ul class="footer-icons-new">
+  <li><a href="https://twitter.com/Robbie_Nguyen" target="_blank" class="footer-icon-new"> <i class="fa fa-twitter"></i></a></li>
+  <li><a href="https://www.facebook.com/t.robbienguyen" class="footer-icon-new"> <i class="fa fa-facebook" target="_blank"></i></a></li>
+  <li><a href="https://www.linkedin.com/in/robbienguyen" class="footer-icon-new"> <i class="fa fa-linkedin" target="_blank"></i></a></li>
+  </ul>
+  </div></div>
+  <div class="clearfix"></div>
+  </div>
+<div class="copyright container-fluid">
+<div class="containter col-xs-12">
+<div class="copyright"><p><script>document.write(new Date().getFullYear())</script> - Robbie Nguyen - All rights reserved. </p></div>
+</div>
+</div>
+</div>
+</div>
+<!-- fontawesome Kit Script -->
+<script src="https://kit.fontawesome.com/e381213115.js" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="../js/compiled.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script> <!-- Resource jQuery -->
+<script>
+// external js: masonry.pkgd.js
+$('.grid').masonry({
+itemSelector: '.grid-item',
+columnWidth: '.grid-sizer',
+percentPosition: true
+});
+</script>
+<script>
+
+$(document).ready(function() {
+      // Show or hide the sticky footer button
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+          $('.go-top').fadeIn(200);
+        } else {
+          $('.go-top').fadeOut(200);
+        }
+      });
+
+      // Animate the scroll to top
+      $('.go-top').click(function(event) {
+        event.preventDefault();
+
+        $('html, body').animate({scrollTop: 0}, 300);
+      })
+    });
+</script>
+</body>
+</html>
