@@ -64,6 +64,10 @@ app.get("/", function(req, res){
   });
 });
 
+app.get("/cgi-sys/defaultwebpage.cgi", function(req,res) {
+  res.redirect("/");
+});
+
 app.get("/about", function(req, res){
   res.render("about", {
     aboutContent: aboutContent

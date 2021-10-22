@@ -1,14 +1,109 @@
 <%- include("partials/header") -%>
 </head>
+
 <body>
-    <h1>Compose</h1>
-    <form action="/compose" method="POST">
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Title</label>
-            <input name="blogTitle" class="form-control" id="exampleFormControlInput1">
-            <label for="exampleFormControlTextarea1">Post</label>
-            <textarea class="form-control" name="blogPost" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <div class="contact-wrap">
+      <div class="container-fluid topblog ">
+        <header class="col-lg-12 padding">
+          <div class="col-xs-6 padding"><div class="logo"><a href="https://robbienguyen.ca/home/"><img src="../images/logo_DarkLighter.jpg" class="logo" alt="logo"></a></div></div>
+          <div class="col-xs-6 padding">
+            <main class="cd-main-content">
+            <section class="center">
+              <a href="#" class="cd-btn navburger" id="modal-trigger"  data-type="cd-modal-trigger">
+                <span class="menu-pos">MENU</span>
+                <i class="fa fa-minus topline" aria-hidden="true"></i>
+                <i class="fa fa-minus middleline" aria-hidden="true"></i>
+                <i class="fa fa-minus bottomline" aria-hidden="true"></i>
+              </a>
+            </section>
+            </main> <!-- .cd-main-content -->
+            <div class="cd-modal" data-modal="modal-trigger">
+              <div class="cd-svg-bg"
+                data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"
+                data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z"
+                data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"
+                data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z"
+                data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"
+                data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
+                <svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
+                  <title>SVG Modal background</title>
+                  <path id="cd-changing-path-1" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"/>
+                  <path id="cd-changing-path-2" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"/>
+                  <path id="cd-changing-path-3" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
+                </svg>
+              </div>
+              <div class="cd-modal-content">
+                <ul class="navigation">
+                  <li class="color"><a href="https://robbienguyen.ca/home/" class="link anim-middleout">Home</a></li>
+    							<li class="color"><a href="https://robbienguyen.ca/about/" class="link anim-middleout">About</a></li>
+    							<li class="color"><a href="https://robbienguyen.ca/work/" class="link anim-middleout">Work</a></li>
+    							<li class="color"><a href="https://robbienguyen.ca/expertise/" class="link anim-middleout">Expertise</a></li>
+    							<li class="color-select"><a href="#" class="link anim-middleout">Thoughts</a></li>
+    							<li class="color"><a href="https://robbienguyen.ca/contact/" class="link anim-middleout">Contact me</a></li>
+                </ul>
+                <ul class="social-icons">
+              <li><a href="https://twitter.com/Robbie_Nguyen" target="_blank"  class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.facebook.com/t.robbienguyen" target="_blank" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+
+              <li><a href="https://www.linkedin.com/in/robbienguyen" target="_blank" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+
+                </ul>
+                </div> <!-- cd-modal-content -->
+                <a href="index.html#0" class="modal-close">Close</a>
+                </div> <!-- end of-modal -->
+                <div class="cd-cover-layer"></div> <!-- .cd-cover-layer -->
+              </div>
+            </header>
+            <a href="#" class="go-top">Go Top</a>
+            <div class="clearfix"></div>
+            <div class="textline-left"> <ul class="social-icons-new">
+              <li><a href="https://twitter.com/Robbie_Nguyen" target=“_blank"
+              class="social-icon-new"> <i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.facebook.com/t.robbienguyen" target=“_blank"
+              class="social-icon-new"> <i class="fa fa-facebook"></i></a></li>
+
+              <li><a href="https://www.linkedin.com/in/robbienguyen" target="_blank" class="social-icon-new"> <i class="fa fa-linkedin"></i></a></li>
+
+            </ul></div>
+            <div class="animatedParent animateOnce textline-right"><a href="mailto:hello@robbienguyen.ca" class='animated fadeIn'>contact me</a></div>
+            <div class="blogwrapper ">
+              <div class="row">
+                <div class="blogblock">
+                  <div class="bloghero col-xs-12 animatedParent animateOnce padding">
+                    <h1 class='animated fadeInDownShort'>Create</h1>
+                    <h2 class='animated fadeInUpShort delay-500'>Blog post</h2>
+                    <h3 class='animated fadeInDownShort delay-500'>Add your own blog post below!</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        <button type="submit" name="postList" value="Publish" class="btn btn-primary mb-2">Publish</button>
-    </form>
+        </div>
+        <div class="clearfix"></div>
+        <div class="container-fluid darkbg padding">
+            <section class="work-tier container">
+                <article class="col-sm-10 col-sm-offset-1">
+          <form action="/compose" method="POST">
+              <div class="form-group">
+                  <div class="inputField"> 
+                    <label for="exampleFormControlInput1"><h3>Title</h3></label>
+                    <input name="blogTitle" class="form-control" id="exampleFormControlInput1">
+                  </div>
+                  <div class="inputField"> 
+                    <label for="exampleFormControlTextarea1"><h3>Post</h3></label>
+                    <textarea class="form-control" name="blogPost" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </div>
+              <button type="submit" name="postList" id="btn" value="Publish" class="btn btn-primary mb-2">Publish</button>
+          </form>
+        </article>
+        </section>
+          <div class='container blogtier animatedParent animateOnce'>
+            <div class="grid">
+              <div class="grid-sizer col-sm-6 col-md-4 col-xs-12"></div>  
+              <!-- Start of blog inserts here -->
+</div>
+</div>
+</div>
+
 <%-include("partials/footer") -%>
